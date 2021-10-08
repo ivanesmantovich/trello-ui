@@ -3,6 +3,7 @@
 .App {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
 }
 
 @media screen and (max-width: 992px) {
