@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.App {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 992px) {
+    .App {
+        display: block;
+    }
+  }
+
+.container {
+	padding: 10px;
+	display: grid;
+	background-color: #d6d6d6;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}
+
+.listName {
+	grid-column: 1 / 12;
+	grid-row: 1 / 2;
+	margin-bottom: 10px;
+	color: #292929;
+	font-weight: bold;
+}
+
+.moreButton {
+	grid-column: 12 / 13;
+	grid-row: 1 / 2;
+}
+
+.moreButton:hover {
+	color: #058ed9;
+}
+
+.taskListItem {
+	grid-column: 1 / 13;
+	grid-row: span 1;
+	padding: 5px;
+	margin: 5px 0px;
+	color: #292929;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+		0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+		0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.taskListItem:hover {
+	background-color: #f5f4f5;
+	color: #058ed9;
+}
+
+.addButton {
+	grid-column: 1 / 13;
+	grid-row: span 1;
+	margin-top: 10px;
+	color: #7a7a7a;
+	font-weight: bold;
+}
+
+.addButton:hover {
+	color: #292929;
+}
